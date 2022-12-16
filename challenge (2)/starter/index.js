@@ -1,5 +1,24 @@
+// The total number of months included in the dataset.
+
+//The net total amount of Profit/Losses over the entire period.
+
+//The average of the changes in Profit/Losses over the entire period.
+
+    //You will need to track what the total change in profits is from month to month and then find the average.
+
+    //(Total/Number of months)
+
+//The greatest increase in profits (date and amount) over the entire period.
+
+//The greatest decrease in losses (date and amount) over the entire period.
+
+
+
+
 var finances = [
-['Jan-2010', 867884],
+['Jan-2010', 867884],   //finances[0][1] or var firstElement = finances[0];
+                            //              var 
+
 ['Feb-2010', 984655],
 ['Mar-2010', 322013],
 ['Apr-2010', -69417],
@@ -86,3 +105,19 @@ var finances = [
 ['Jan-2017', 138230],
 ['Feb-2017', 671099]
 ];
+
+
+
+//const finances1 = {1, 2, 3, 4, 5};
+
+//console.log(finances1[finances1.length - 1]);
+        //         [Array] could have comma = more items (0 start)
+        //        [0,1] would be first part of array and 2nd part
+
+// .length is all of the array
+// f2 changes all of the corresponding vars
+// use loops
+
+console.log('Total Months: ' + finances.length); // correct for number of months !!!
+//let numbersOnly = [];
+//for (let i =0; i < finances.length; i++)
