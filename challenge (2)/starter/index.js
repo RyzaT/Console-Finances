@@ -118,6 +118,29 @@ var finances = [
 // f2 changes all of the corresponding vars
 // use loops
 
+
+// Total Number of Months
 console.log('Total Months: ' + finances.length); // correct for number of months !!!
+
+
 //let numbersOnly = [];
 //for (let i =0; i < finances.length; i++)
+
+// Net Profit / Loss
+let amounts = []
+for(let i =0;i < finances.length; i++) {
+    amounts.push(finances[i][1]);
+    
+}
+console.log('Net Profit/Loss: ' + amounts);
+// Only Lists ammounts, save for basic notes
+
+
+var sum = 0;//Initial value hast to be 0
+for (let i = 0; i < finances.length; i ++) {
+    var number = parseFloat(finances[i][1]);//Convert to numbers with parseFloat
+    sum += number;//Sum the numbers
+}
+
+console.log('Net Profit or Loss: ' + sum);//Correct!!
+
