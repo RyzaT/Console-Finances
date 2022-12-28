@@ -14,11 +14,8 @@
 
 
 
-
-var finances = [
+const finances = [
 ['Jan-2010', 867884],   //finances[0][1] or var firstElement = finances[0];
-                            //              var 
-
 ['Feb-2010', 984655],
 ['Mar-2010', 322013],
 ['Apr-2010', -69417],
@@ -132,7 +129,7 @@ for(let i =0;i < finances.length; i++) {
     amounts.push(finances[i][1]);
     
 }
-console.log('Net Profit/Loss: ' + amounts);
+//console.log('The Amounts: ' + amounts);
 // Only Lists ammounts, save for basic notes
 
 
@@ -144,3 +141,44 @@ for (let i = 0; i < finances.length; i ++) {
 
 console.log('Net Profit or Loss: ' + sum);//Correct!!
 
+//The average of the changes in Profit/Losses over the entire period.
+
+    //You will need to track what the total change in profits is from month to month and then find the average.
+
+    //(Total/Number of months)
+
+    const totals = amounts.reduce((a, b) => a + b, 0);
+    const avg = (totals / finances.length) || 0;
+    
+    console.log(`If the total is: ${totals}. 
+    Then the average is: ${avg}.`); // This works (maybe)
+
+function findAverage(finances) {
+    let average = 0;
+    for (let i = 0; i < finances.length; i++) {
+        let currentNum = parseFloat(finances[i][1]); 
+        average += currentNum;   
+    }
+    var averageChange = average / finances.length
+    return findAverage;
+}
+//console.log(findAverage);
+
+
+
+var i = 0
+var total = i + (finances [i][1]); //gives me first month amount
+// now to get it to add the whole array //
+    
+    //for  total; + (finances [i][1]++);
+
+console.log(total) 
+
+// Greatest Increase in Profits:
+
+
+const max = finances.reduce((a, b) => Math.max(a, b), -Infinity);
+
+function getMaxOfArray(finances) {
+    return Math.max.apply(null, finances);
+  }
