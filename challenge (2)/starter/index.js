@@ -117,68 +117,29 @@ const finances = [
 
 
 // Total Number of Months
-console.log('Total Months: ' + finances.length); // correct for number of months !!!
 
+months = (finances.length);
 
-//let numbersOnly = [];
-//for (let i =0; i < finances.length; i++)
+console.log('Total Number of Months: ' + months); // correct for number of months !!!
 
-// Net Profit / Loss
-let amounts = []
-for(let i =0;i < finances.length; i++) {
-    amounts.push(finances[i][1]);
-    
+// Net Value of all Months
+
+var totalValue = 0;
+
+for(let i = 0; i < finances.length; i++){
+    totalValue += finances[i][1];
 }
-//console.log('The Amounts: ' + amounts);
-// Only Lists ammounts, save for basic notes
+console.log("Total Net Profit/Loss: $" + totalValue);
 
+// Average Change - calc changes then average 
 
-var sum = 0;//Initial value hast to be 0
-for (let i = 0; i < finances.length; i ++) {
-    var number = parseFloat(finances[i][1]);//Convert to numbers with parseFloat
-    sum += number;//Sum the numbers
-}
+var change = 0;
+var changes = [];
 
-console.log('Net Profit or Loss: ' + sum);//Correct!!
-
-//The average of the changes in Profit/Losses over the entire period.
-
-    //You will need to track what the total change in profits is from month to month and then find the average.
-
-    //(Total/Number of months)
-
-    const totals = amounts.reduce((a, b) => a + b, 0);
-    const avg = (totals / finances.length) || 0;
+for (let i = 1; i < finances.length; i++){
+    change = finances[i][1] - finances[i-1][1];
+    changes.push(change);
+    //console.log(changes);
+} 
     
-    console.log(`If the total is: ${totals}. 
-    Then the average is: ${avg}.`); // This works (maybe)
-
-function findAverage(finances) {
-    let average = 0;
-    for (let i = 0; i < finances.length; i++) {
-        let currentNum = parseFloat(finances[i][1]); 
-        average += currentNum;   
-    }
-    var averageChange = average / finances.length
-    return findAverage;
-}
-//console.log(findAverage);
-
-
-
-var i = 0
-var total = i + (finances [i][1]); //gives me first month amount
-// now to get it to add the whole array //
-    
-    //for  total; + (finances [i][1]++);
-
-console.log(total) 
-
-// Greatest Increase in Profits:
-
-
-const max = finances.reduce((a, b) => Math.max(a, b), -Infinity);
-
-function getMaxOfArray(finances) {
-    return Math.max.apply(null, finances);
-  }
+var average = 0;
