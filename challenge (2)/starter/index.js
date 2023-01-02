@@ -11,7 +11,8 @@
 //The greatest increase in profits (date and amount) over the entire period.
 
 //The greatest decrease in losses (date and amount) over the entire period.
-
+console.log("Financial Analysis");
+console.log("__________________");
 
 
 const finances = [
@@ -154,7 +155,8 @@ for (let i=0; i < changes.length; i++){
 
 aveChange = totalChange / changes.length;
 
-console.log("The Average Monthly Change is: $" + aveChange);
+
+console.log("The Average Monthly Change is: $" + Math.round((aveChange+Number.EPSILON)*100)/100);
 
 // Greatest Increase In Profit
 
