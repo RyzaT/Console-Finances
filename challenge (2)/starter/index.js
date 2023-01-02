@@ -143,3 +143,17 @@ for (let i = 1; i < finances.length; i++){
 } 
     
 var average = 0;
+totalChange = 0;
+var aveChange = 0;
+// Add all values in changes
+
+for (let i=0; i < changes.length; i++){
+    totalChange += changes[i];
+}
+// Divide to get average
+
+aveChange = totalChange / changes.length;
+
+console.log("Average Monthly Change is: $" + aveChange);
+
+
