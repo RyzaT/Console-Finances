@@ -154,6 +154,35 @@ for (let i=0; i < changes.length; i++){
 
 aveChange = totalChange / changes.length;
 
-console.log("Average Monthly Change is: $" + aveChange);
+console.log("The Average Monthly Change is: $" + aveChange);
+
+// Greatest Increase In Profit
+
+var increase = 0
+var incDate = ""
+
+for (let i=0; i < changes.length; i++){
+    if(increase < changes[i]){
+        increase = changes[i];
+        incDate = finances[i+1][0];
+    }
+}
+
+console.log("Greatest Increase in Profit: $" + increase + " in " + incDate);
+
+// Greatest Decrease In Profit
+
+var decrease = 0
+var decDate = ""
+
+for (let i=0; i < changes.length; i++){
+    if(decrease > changes[i]){
+        decrease = changes[i];
+        decDate = finances[i+1][0];
+    }
+}
+
+console.log("Greatest Decrease in Profit: $" + decrease + " in " + decDate);
+
 
 
