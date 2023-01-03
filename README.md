@@ -5,11 +5,11 @@ Module 4 Challenge
 
 Having been given some starter code in the form of an array i have to work out the following answers and have them print to console:
 
-Total Number of Months
-Total Amount
-Average Change
-Greatest Increase in Profits
-Greatest Decrease in Profits
+    Total Number of Months
+    Total Amount
+    Average Change
+    Greatest Increase in Profits
+    Greatest Decrease in Profits
 
 
 ## Links
