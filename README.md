@@ -1,7 +1,7 @@
 # Console-Finances
 Module 4 Challenge
 
-Using JavaScript to work out financial information
+## Using JavaScript to work out financial information
 
 Having been given some starter code in the form of an array i have to work out the following answers and have them print to console:
 
@@ -12,18 +12,18 @@ Greatest Increase in Profits
 Greatest Decrease in Profits
 
 
-Links
+## Links
 https://github.com/RyzaT/Console-Finances
 
-Installation
+## Installation
 N/A
 
-Usage
+## Usage
 This repositorty is part of a bootcamp learning platform and is a part of my coursework. Please feel free to use it for your own studies.
 
-Credits
+## Credits
 In order to complete this assignment i have mainly used the Stackoverflow and W3 Schools websites.
 
-License
+## License
 Please refer to the LICENSE in the repo.
 
