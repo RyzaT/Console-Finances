@@ -15,6 +15,10 @@ Having been given some starter code in the form of an array i have to work out t
 ## Links
 https://github.com/RyzaT/Console-Finances
 
+
+![Alt text](starter/screenshot.png)
+
+
 ## Installation
 N/A
 
